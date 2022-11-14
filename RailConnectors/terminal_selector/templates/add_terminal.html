@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Search terminal{% endblock %}
+
+{% block content %}
+
+       <h4> Add item to database</h4>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table>
+        {{ form_add.as_table }}
+            </table>
+        <button type="submit" class="save btn btn-secondary">Add Item to DB</button>
+    </form>
+</div>
+
+
+
+
+{% endblock %}

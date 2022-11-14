@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Search terminal{% endblock %}
+
+{% block content %}
+
+<h5> All connectors  </h5>
+<ul>
+{% for key, value in connector_dict.items %}
+    <li>
+        {{key}} - {{value}}
+    </li>
+{% endfor %}
+
+</ul>
+{% endblock %}

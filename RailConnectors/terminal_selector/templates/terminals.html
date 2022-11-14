@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Search terminal{% endblock %}
+
+{% block content %}
+
+<h5> Suitable terminals  </h5>
+<ul>
+
+{% for key, value in terminals.items %}
+<li>{{ key }} - {{ value }}</li>
+{% endfor %}
+
+</ul>
+{% endblock %}
